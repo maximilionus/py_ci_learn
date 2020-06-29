@@ -12,7 +12,7 @@ def test_decap():
     string = "WooSH"
     expected = "woosh"
 
-    assert main.de_capitalizer(string) != expected
+    assert main.de_capitalizer(string) == expected
 
 
 def test_joinstr():
