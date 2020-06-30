@@ -2,8 +2,8 @@ from ci_learn import main
 
 
 def test_arg_summ():
-    args = 1, 5, 20
-    expected = 26
+    args = 1, 5, 20, 1
+    expected = 27
 
     assert main.arg_summ(*args) == expected
 
