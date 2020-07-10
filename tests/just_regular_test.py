@@ -1,4 +1,5 @@
 from ci_learn import main
+from os import getenv
 
 
 def test_arg_summ():
@@ -20,3 +21,10 @@ def test_joinstr():
     expected = "Wow man that's cool!"
 
     assert main.join_strings(*args) == expected
+
+
+def test_env():
+    var_name = "SUPER_PUPER_VAR"
+    expected = "cockroach"
+
+    assert getenv(var_name) == expected, f"Env var '{var_name}' doesn't exist or value is wrong"
